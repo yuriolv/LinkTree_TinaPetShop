@@ -7,22 +7,24 @@ body *{
 }
 
 body {
+    position: relative;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    overflow-y: auto;
     overflow-x: hidden;
 
-    max-height: 126vh;
+    height: 700px;
 }
 
 #imageLogo {
     width: 125px;
     height: 125px;
+
     background-image: url(./assets/LOGO\ \(3\).svg);
     background-size: cover;
+
     border-radius: 50%;
     border: 2.5px solid black;
 }
@@ -43,10 +45,10 @@ header {
 
 header > h1 {
     margin-top: 10px;
-    font-family: 'Inter', sans-serif;
     width: 330px;
     height: 40px;
     
+    font-family: 'Inter', sans-serif;
 }
 header > p {
     font-family: 'Inter', sans-serif;
@@ -107,23 +109,20 @@ ul {
 
     position: absolute;
     left: 1125px;
-    bottom: -55px;
-
-
 
     background-image: url(./assets/Vector1.svg);
 }
 
 #intersect2{
     width: 905.8px;
-    height: 862.55px;
+    height: 100%;
 
     position: absolute;
     right: 600.2px;
+    bottom: 0;
 
     background-image: url(./assets/Intersect.svg);
     background-repeat: no-repeat;
     background-size: contain;
 
-    max-height: 126vh;
 }
