@@ -71,6 +71,8 @@ ul {
     gap: 30px;
     padding: 16px; /* Adiciona um espaçamento interno ao redor dos botões */
     margin-top: -15px;
+
+    z-index: 2;
 }
      
   ul li a{
@@ -120,6 +122,8 @@ ul {
     position: absolute;
     right: 600.2px;
     bottom: 0;
+
+    z-index: -1;
 
     background-image: url(./assets/Intersect.svg);
     background-repeat: no-repeat;
