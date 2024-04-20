@@ -53,7 +53,7 @@ header > h1 {
 header > p {
     font-family: 'Inter', sans-serif;
     font-weight: 500px;
-    line-height: 24px;
+    line-height: 1.563rem;
 }
 
 /* BOTOES DE LINKS*/
@@ -75,13 +75,13 @@ ul {
     z-index: 2;
 }
      
-  ul li a{
+ li{
   
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     
-    padding: 12px 250px;
+    padding: 12px;
   
     background-color: #3498DB;
     border: 2.5px solid black;
@@ -89,17 +89,58 @@ ul {
   
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-  
+
+}
+a {
     text-decoration: none;
     font-weight: 500;
+    margin: 0 15px;
   
     color: white;
-  }
+}
+#web {
+    width: 29px;
+    height: 28px;
+
+    background-image: url("assets/Website_icon_R.svg");
+    background-size: contain;
+
+    
+}
+#instagram {
+    width: 29px;
+    height: 28px;
+
+    background-image: url("assets/Instagram_icon_L.svg");
+}
+#drive {
+    width: 29px;
+    height: 28px;
+
+    background-image: url("assets/drive.svg");
+    background-size: contain;
+}
+#localizacao {
+    width: 29px;
+    height: 28px;
+
+    background-image: url("assets/localizacao.svg");
+    background-size: contain;
+}
+#whatsapp {
+    width: 29px;
+    height: 28px;
+
+    background-image: url("assets/whatsapp.svg");
+    background-size: cover;
+}
   
   /* pseudo-selector*/
-  ul li a:hover {
+  li:hover {
     background-color: #3498DB;
     border: 2px solid black;
+
+    cursor: pointer;
     transform: scale(1.05); /* Aumenta em 10% */
     transition: transform 0.5s; /* Adiciona uma transição suave */
   }
