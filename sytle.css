@@ -32,6 +32,8 @@ body {
 
 
 header {
+    margin-top: 40px;
+    margin-bottom: 10px;
     width: 552px;
     height: 290px;
 
@@ -190,12 +192,11 @@ a {
 }
 
 @media screen and (max-width: 720px){
-    header h1{
-        font-size: larger;
+    header{
+        margin-bottom: 0;
     }
-
-    header p {
-        font-size: small;
+    header h1{
+        font-size: 20px;
     }
 
     #imageLogo{
@@ -216,22 +217,34 @@ a {
         width: 19px;
         height: 18px;
     }
-    a{
-        font-size: 12px;
+    p{
+        width: 250px;
     }
-
+    #p2 {
+        visibility: hidden;
+    }
     ul{
-        margin: 0;
+        margin-top: -30px;
+        height: 400px;
+    }
+    p,a{
+        font-size: 16px;
     }
     
 }
 @media screen and (max-width:600px) {
     header{
-        height: 250px;
-        margin-top: 40px;
+        height: 270px;
+        margin-bottom: 0;
     }
     p{
         width: 250px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    p, a{
+        font-size: 14px;
     }
     #p2 {
         visibility: hidden;
