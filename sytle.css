@@ -1,9 +1,10 @@
 body{
-    background: url(./assets/Logo\ Tina\ Pet\ Shop\ .svg) no-repeat top center/cover;
+    background: url(./assets/Background.svg) no-repeat top center/cover;
     margin: 0;
 }
 body *{
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -12,10 +13,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
+    min-height: 100vh;
     overflow-x: hidden;
-
-    height: 700px;
 }
 
 #imageLogo {
@@ -43,14 +44,14 @@ header {
     text-align: center;
 }
 
-header > h1 {
-    margin-top: 10px;
+header  h1 {
+    margin: 10px 10px;
     width: 330px;
-    height: 40px;
     
     font-family: 'Inter', sans-serif;
+    font-size: 32px;
 }
-header > p {
+header  p {
     font-family: 'Inter', sans-serif;
     font-weight: 500px;
     line-height: 1.563rem;
@@ -58,10 +59,10 @@ header > p {
 
 /* BOTOES DE LINKS*/
 ul {
-    width: 653px;
+    width: 80%;
+    max-width: 653px;
     height: 479px;
 
-    margin-top: 1;
     font-family: 'Inter', sans-serif;
     list-style: none;
 
@@ -69,8 +70,7 @@ ul {
     flex-direction: column;
 
     gap: 30px;
-    padding: 16px; /* Adiciona um espaçamento interno ao redor dos botões */
-    margin-top: -15px;
+    margin-bottom: 70px;
 
     z-index: 2;
 }
@@ -81,7 +81,7 @@ ul {
     align-items: center;
     justify-content: space-between;
     
-    padding: 12px;
+    padding: 8px;
   
     background-color: #3498DB;
     border: 2.5px solid black;
@@ -94,8 +94,6 @@ ul {
 a {
     text-decoration: none;
     font-weight: 500;
-    margin: 0 15px;
-  
     color: white;
 }
 #web {
@@ -112,12 +110,15 @@ a {
     height: 28px;
 
     background-image: url("assets/Instagram_icon_L.svg");
+    background-size: contain;
+
 }
 #drive {
     width: 29px;
     height: 28px;
 
     background-image: url("assets/drive.svg");
+    background-repeat: no-repeat;
     background-size: contain;
 }
 #localizacao {
@@ -132,7 +133,8 @@ a {
     height: 28px;
 
     background-image: url("assets/whatsapp.svg");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
   
   /* pseudo-selector*/
@@ -147,21 +149,25 @@ a {
 
   /* intersects */
 #intersect1{
-    width: 403px;    
-    height: 644px;
+    width: 210px;    
+    height: 740px;
 
     position: absolute;
-    left: 1125px;
+    right: 0;
 
-    background-image: url(./assets/Vector1.svg);
+    z-index: -1;
+
+    background-image: url(./assets/Vector.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #intersect2{
-    width: 905.8px;
-    height: 100%;
+    width: 540px;
+    height: 450px;
 
     position: absolute;
-    right: 600.2px;
+    left: 0;
     bottom: 0;
 
     z-index: -1;
@@ -170,4 +176,77 @@ a {
     background-repeat: no-repeat;
     background-size: contain;
 
+}
+
+@media screen and (max-width: 840px) {
+    #intersect2{
+        width: 440px;
+        height: 350px;
+    }
+    #intersect1{
+        width: 176px;
+        height: 620px;
+    }
+}
+
+@media screen and (max-width: 720px){
+    header h1{
+        font-size: larger;
+    }
+
+    header p {
+        font-size: small;
+    }
+
+    #imageLogo{
+        width: 85px;
+        height: 85px;
+    }
+
+    #intersect2{
+        width: 390px;
+        height: 300px;
+    }
+    #intersect1{
+        width: 126px;
+        height: 570px;
+    }
+
+    #web, #whatsapp, #drive, #instagram, #localizacao {
+        width: 19px;
+        height: 18px;
+    }
+    a{
+        font-size: 12px;
+    }
+
+    ul{
+        margin: 0;
+    }
+    
+}
+@media screen and (max-width:600px) {
+    header{
+        height: 250px;
+        margin-top: 40px;
+    }
+    p{
+        width: 250px;
+    }
+    #p2 {
+        visibility: hidden;
+    }
+    ul{
+        margin-top: -30px;
+        height: 400px;
+    }
+    #intersect2{
+        width: 370px;
+        height: 280px;
+    }
+    #intersect1{
+        width: 106px;
+        height: 550px;
+    }
+    
 }
