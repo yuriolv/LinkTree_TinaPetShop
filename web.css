@@ -1,0 +1,31 @@
+
+
+body{
+    background: url(./assets/Background.svg) no-repeat top center/cover;
+    margin: 0;
+}
+#logolisa{
+background-image: url(./assets/logolisa.svg);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center top;
+width: 1000px;
+height: 200px;
+
+}
+
+h1{
+    margin: 10px 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 80px;
+}
+button {
+    width: 100px ;
+    height: 45px;
+
+    position: absolute; /* Define o posicionamento absoluto */
+    top: 50px; /* Define a distância do topo */
+    left: 50px; /* Define a distância da esquerda */
+
+    border-radius: 12px; 
+}
